@@ -1,8 +1,8 @@
 # Homework Assignment One - Tip Calculator
 
-#Calculator 1
+# Excersice 1
 
-total_bill = float(input("Insert total bill ammount >>"))
+#total_bill = float(input("Insert total bill ammount >>"))
 # level_of_service = input("How was the service; good, fair or bad?")
 
 # if level_of_service == "good":
@@ -17,11 +17,25 @@ total_bill = float(input("Insert total bill ammount >>"))
 # else:
 #     print("Do I look like I care?")
 
-# Calculator 2
+# Excercise 2
 
-total_persons = int(input("How many people to split between?"))
+# total_persons = int(input("How many people to split between?"))
 
-split_pay = total_bill / total_persons
+# split_pay = total_bill / total_persons
 
 
-print("Each person will pay " + str(split_pay))
+# print("Each person will pay " + str(split_pay))
+
+# Excercise 3
+
+
+coins = 0
+tally = print(f"You have {coins} coins")
+
+question = input("Do you want another coin?")
+
+while question == "yes":
+    coins += 1
+    print(f"You know have {coins}")
+    question = input("Do you want another coin?")
+    
