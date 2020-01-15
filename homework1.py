@@ -29,13 +29,43 @@
 # Excercise 3
 
 
-coins = 0
-tally = print(f"You have {coins} coins")
+# coins = 0
+# tally = print(f"You have {coins} coins")
 
-question = input("Do you want another coin?")
+# question = input("Do you want another coin?")
 
-while question == "yes":
-    coins += 1
-    print(f"You know have {coins}")
-    question = input("Do you want another coin?")
+# while question == "yes":
+#     coins += 1
+#     print(f"You know have {coins}")
+#     question = input("Do you want another coin?")
     
+
+# Excercise 4
+
+# width = int(input("What is the width?"))
+# height = int(input("What is the hight?"))
+
+# print("*" * width)
+
+# for _ in range(height - 2):
+#     print('*' + ' ' * (width - 2) + '*')
+
+# print('*' * width)
+
+
+# Excercise 5
+
+# print("    *")
+# print("   ***")
+# print("  *****")
+# print(" *******")
+
+# Excercise 6
+
+
+
+num1 = 1
+
+for i in range(1, 11):
+    print(num1, "x", i, "=", num1 *i)
+
