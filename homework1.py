@@ -24,7 +24,7 @@
 # split_pay = total_bill / total_persons
 
 
-# print("Each person will pay " + str(split_pay))
+# print(f"Each person will pay {split_pay}")
 
 # Excercise 3
 
@@ -44,7 +44,7 @@
 
 # width = int(input("What is the width?"))
 # height = int(input("What is the hight?"))
-
+ 
 # print("*" * width)
 
 # for _ in range(height - 2):
@@ -55,17 +55,15 @@
 
 # Excercise 5
 
-# print("    *")
-# print("   ***")
-# print("  *****")
-# print(" *******")
+# lvl = 1
+# fspacer > 0:
+# print()
 
 # Excercise 6
 
-
-
-num1 = 1
-
 for i in range(1, 11):
-    print(num1, "x", i, "=", num1 *i)
+    for u in range(1, 11):
+        print()
+
+
 
