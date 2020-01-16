@@ -3,12 +3,13 @@
 # Excercise 1
 
 
-def smallest(a):
-    b = copy(a)
-    set(b)
-    small_num = b[0]
+def smallest(input):
+    
+    sorted_list = sorted(input)
+    print(sorted_list)
+    print(sorted_list[0])
 
-
-print(smallest([1, 2, 3, 4, 5, 6]))
+    
+smallest([1, 5, 3, 2, 4])
 
 
