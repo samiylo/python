@@ -26,16 +26,33 @@
 
 # Excercise 3
 
-strings =  ["hello", "my name", "your name"]
+# strings =  ["hello", "my name", "your name"]
 
-def short(input):
-    shortest = ""
+# def short(input):
+#     shortest = ""
 
-    print(input)
-    return min(input,key=len)
+#     print(input)
+#     return min(input,key=len)
         
-    print(shortest)
+#     print(shortest)
 
 
 
-print(short(strings))
+# print(short(strings))
+
+# Excercise 4
+
+# my_sentence = ["My", "name", "is", "Samiylo"]
+
+# def longest(input):
+
+#     print(input)
+
+#     long_word = ""
+#     for word in input:
+#         if len(word) > len(long_word):
+#             long_word = word
+#     return long_word
+
+
+# print(longest(my_sentence))
