@@ -74,7 +74,19 @@
 # Excercise 6
 
 word = "Hello"
+vowls = 'a', 'e', 'i', 'o', 'u'
 
+word_list = list(word)
+print(word_list)
 
+new_word = []
+print(new_word)
+for letter in word_list:
+    for index in vowls:
+        if letter == vowls:
+            new_word.append(vowls)
 
+# Excercise 7
+
+#I just cant seem to find the solution. I will try to get assistance tommorow.
 
