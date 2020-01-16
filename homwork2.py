@@ -45,10 +45,36 @@
 
 # Excercise 4
 
-numbers = [1, 2, 2, 5, 3 ,4 ,5 ]
-print(numbers)
-new_numbers = set(numbers)
+# numbers = [1, 2, 2, 5, 3 ,4 ,5 ]
+# print(numbers)
+# new_numbers = set(numbers)
 
-print(new_numbers)
+# print(new_numbers)
+
+# Excercise 5
+
+# phrase = input("I will translate.")
+# uphrase = phrase.upper()
+
+# leet_letters = {"A":4, "E":3, "G":6, "I":1, "O":0, "S":5, "T":7}
+
+# phrase_list = list(uphrase)
+# #print(phrase_list)
+
+# changed_letters = []
+
+# for letter in range(len(leet_letters)):
+#     if letter == phrase_list:
+#         changed_letters.append(leet_letters)
+
+# print(changed_letters)
+
+# Im lost here and cant seem to find a solution
+
+# Excercise 6
+
+word = "Hello"
+
+
 
 
