@@ -1,4 +1,13 @@
 import pickle
+import os.path
+
+if os.path.isfile('contacts.pickle'):
+    with open('contacts.pickle', 'rb') as fh:
+        contacts = pickle.load(fh)
+
+else:
+    contacts = {}
+
 
 print(
     """
@@ -11,33 +20,39 @@ print(
     Quit: 5
     """)
 
-contacts = {}
 
 while True:
     userAction = int(input("What do you want to do (1-5)? "))
+    
 
-    if userAction != [1,2,3,4,5]:
-        print("Please enter a number 1 - 5.")
+    # if userAction != [1,2,3,4,5]:
+    #     print("Please enter a number 1 - 5.")
 
     if userAction == 1:
         name = input("Who are you looking for? ")
         info = contacts.get(name)
         print(info)
 
-    if userAction == 2:
+    elif userAction == 2:
         name = input("What is the name? ")
         number = input("What is the number? ")
 
-        contacts[str(name)] = number
+        contacts[name] = number
         print(contacts)
 
-    if userAction == 3:
+    elif userAction == 3:
         name = input("Who would you like to delete? ")
         del contacts[name]
         print(f"{name} has neen deleted!")
 
-    if userAction == 4:
+    elif userAction == 4:
         print(contacts)
 
-    if userAction == 5:
+    elif userAction == 5:
+        with open('contacts.pickle', 'wb') as fh:
+            pickle.dump(contacts, fh)
+        print("File saved. Bye!")
         break
+    
+    else:
+        print("Please use input 1 - 5. ")
