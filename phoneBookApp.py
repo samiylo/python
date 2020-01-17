@@ -1,5 +1,6 @@
 import pickle
 import os.path
+import time
 
 if os.path.isfile('contacts.pickle'):
     with open('contacts.pickle', 'rb') as fh:
@@ -31,11 +32,11 @@ while True:
     if userAction == 1:
         name = input("Who are you looking for? ")
         info = contacts.get(name)
-        print(info)
+        print(f'Name: {name}\nPhone Number: {info}.')
 
     elif userAction == 2:
         name = input("What is the name? ")
-        number = input("What is the number? ")
+        number = input("What is the phone number? ")
 
         contacts[name] = number
         print(contacts)
@@ -51,6 +52,17 @@ while True:
     elif userAction == 5:
         with open('contacts.pickle', 'wb') as fh:
             pickle.dump(contacts, fh)
+        time.sleep(.1)
+        print("-")
+        time.sleep(.1)
+        print("--")
+        time.sleep(.1)
+        print("---")
+        time.sleep(.1)
+        print("----")
+        time.sleep(.1)
+        print("-----")
+        time.sleep(.1)
         print("File saved. Bye!")
         break
     
