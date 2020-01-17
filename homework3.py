@@ -5,10 +5,11 @@
 
 # def smallest(input):
     
-#     sorted_list = sorted(input)
-#     print(sorted_list)
-#     print(sorted_list[0])
-
+#     smallest = input[4]
+#     for num in input:
+#         if num < smallest:
+#             smallest = num
+#     return print(smallest)
 # smallest([1, 5, 3, 2, 4])
 
 # Excercise 2
@@ -29,10 +30,13 @@
 # strings =  ["hello", "my name", "your name"]
 
 # def short(input):
-#     shortest = ""
+#     shortest = input[2]
 
 #     print(input)
-#     return min(input,key=len)
+#     for word in input:
+#         if len(word) < len(shortest):
+#             shortest = word
+#     return shortest
         
 #     print(shortest)
 
