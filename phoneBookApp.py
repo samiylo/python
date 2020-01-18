@@ -23,7 +23,17 @@ print(
 
 
 while True:
-    userAction = int(input("What do you want to do (1-5)? "))
+    userAction = int(input(print(
+    """
+    Electronic Phone Book
+    =====================
+    Look up an entry: 1
+    Set an entry: 2
+    Delete an entry: 3
+    List all entries: 4
+    Quit: 5
+    What do you want to do (1-5)? 
+    """)))
     
 
     # if userAction != [1,2,3,4,5]:
@@ -44,7 +54,7 @@ while True:
     elif userAction == 3:
         name = input("Who would you like to delete? ")
         del contacts[name]
-        print(f"{name} has neen deleted!")
+        print(f"{name} has been deleted!")
 
     elif userAction == 4:
         print(contacts)
