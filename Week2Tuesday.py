@@ -107,38 +107,85 @@ import datetime
 # alina.greeting()
 # alina.greeting()
 
-# class Person:
-#     def __init__(self, name, email, phone):
-#         self.name = name
-#         self.email = email
-#         self.phone = phone
+class Person:
+    def __init__(self, name, email, phone):
+        self.name = name
+        self.email = email
+        self.phone = phone
+        self.friends = []
+        print(self.friends)
 
-#     def greet(self, other_person):
-#         #self.other_person = other_person
-#         print(f"Hello {other_person.name}, I am {self.name}")
+    def greet(self, other_person):
+        
+        print(f"Hello {other_person.name}, I am {self.name}")
+    
+    def print_contact_info(self):
+        print(f"{self.name}'s' email: {self.email}, {self.name}'s phone: {self.phone}")
 
-# Sonny = Person("Sonny", "sonny@hotmail.com", "483-385-4948")
-# Jordan = Person("Jordan", "jordan@aol.com", "495-586-3456")
 
-# Sonny.greet(Jordan)
-# Jordan.greet(Sonny)
+
+Sonny = Person("Sonny", "sonny@hotmail.com", "483-385-4948",)
+Jordan = Person("Jordan", "jordan@aol.com", "495-586-3456",)
+
+Sonny.friends.append(Jordan)
+
+# print(Sonny.friends[0].phone)
+
+#Sonny.greet(Jordan)
+#Jordan.greet(Sonny)
+
+
+
+
 # print(f"Hello Jordan, here is my info, {Sonny.name}, {Sonny.email}, {Sonny.phone}")
 # print(f"Hello Sonny, here is my info, {Jordan.name}, {Jordan.email}, {Jordan.phone}")
+#Sonny.print_contact_info()
+
+
 
 # Inheritence
 # Hello
 
-class VString(str):
-    def reverse(self, name):
-        rstring = ' '
-        for char in name:
-            rstring = char + rstring
-        return rstring
+# class VString(str):
+#     def reverse(self, name):
+#         rstring = ' '
+#         for char in name:
+#             rstring = char + rstring
+#         return rstring
 
-myString = VString("hello")
-print(myString)
+# myString = VString("hello")
+# print(myString)
 
-reversed_string = myString.reverse("Hello")
-print(reversed_string)
+# reversed_string = myString.reverse("Hello")
+# print(reversed_string)
 
+# class Character:
+#     def __init__(self, name, power, health):
+#         self.name = name
+#         self.power = power
+#         self.health = health
+
+# class Hero(Character):
+#     def __init__(self, weapon, name , power, health):
+#         self.weapon = weapon
+#         super(Hero, self).__init__(name, power, health)
+
+
+# alina = Hero("pink gun", "alina", 3, 10) 
+# print(alina.name)
+# print(alina.health)
+
+# Make yout own Class (Vehicle)
+
+# class Vehicle:
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#     def print_info(self):
+#         print(f'Make > {self.make}, Model > {self.model}, and Year {self.year}.')
+
+# car = Vehicle('Toyota', 'Camry', 2019)
+
+# car.print_info()
 
