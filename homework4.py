@@ -23,4 +23,17 @@ def word_count(index):
             count[word] = 1
     return count
 
+tally = word_count(user_input)
+
 print(word_count(user_input))
+
+# Assignment Three
+
+#sorted_keys =  sorted(tally.values(), reverse=True)
+#print(sorted_keys)
+
+#final_keys = tally[:3]
+import operator
+deez = dict(sorted(tally.items(), key=operator.itemgetter(1), reverse=True)[:3])
+print(deez)
+
