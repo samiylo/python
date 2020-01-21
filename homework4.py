@@ -1,12 +1,13 @@
 # Homework Week 1, Friday:
 
-# Assignment One
+Assignment One
 
-# from collections import Counter
-
-# user_input = input("Please type a word. ")
-
-# print(Counter(user_input))
+empty_dict = {}
+for letter in word:
+    if letters not in word:
+        empty_dict[letters] = 0
+    empty_dict[letters] += 1
+print(empty_dict)
 
 
 #  Assignment Two
