@@ -41,6 +41,9 @@ class Bank:
             balance = accounts.balance
             if accounts.fname == your_name:
                 accounts.balance -= ammount
+                if accounts.balance < 0:
+                    accounts.balance -= 35
+                    print("A 35$ fee was charged due to unsuficcient funds.")
                 print(f"{ammount} has been withdrawn from {your_name}'s account")
                 print(f"{balance} is the new ballance in {your_name}'s account.")
             else:
